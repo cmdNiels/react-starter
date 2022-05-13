@@ -1,9 +1,9 @@
 {
-	"name": "react",
-	"version": "0.0.0",
+	"name": "starter",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "npm run tailwind && vite",
-		"build": "npm run tailwind && vite build",
+		"build": "npm run tailwind && vite build --base=/react-starter/",
 		"tailwind": "npx tailwindcss build styles.css -o src/assets/css/output.css "
 	},
 	"dependencies": {

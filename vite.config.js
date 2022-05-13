@@ -8,6 +8,7 @@ const config = {
 	jsx: "react",
 	plugins: [reactPlugin],
 	silent: false,
+	outDir: "./docs",
 };
 
 export default config;
