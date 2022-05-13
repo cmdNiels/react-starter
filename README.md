@@ -13,6 +13,10 @@
         GitHub Profile
     </a>
     ·
+    <a href="https://cmdniels.github.io/react-starter/">
+        Example
+    </a>
+    ·
     <a href="https://github.com/cmdNiels/react-starter/issues">
         Report Bug
     </a>
