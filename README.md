@@ -85,6 +85,11 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm run dev
    ```
+3. Build the project
+   
+   ```sh
+   npm run build
+   ```
 <p align="right">(<a href="#top">Back to Top</a>)</p>
 
 ## Usage
