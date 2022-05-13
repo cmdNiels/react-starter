@@ -2,32 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarButton from "./NavbarButton";
 
-// export default function Navbar({ pages })
-// {
-// 	return (
-// 		<>
-// 			<header className="text-main-100 bg-main-800 body-font mb-5 shadow-lg">
-// 				<div className="flex flex-wrap p-5 flex-row items-center">
-// 					<Link to="/" className="flex title-font font-medium items-center text-main-100 mb-0">
-// 						<span className="ml-3 text-xl">NTools</span>
-// 					</Link>
-// 					<nav className="md:ml-auto flex flex-wrap items-center text-main-100 justify-center">
-// 						{/* <NavbarButton href="/docs" text="Docs" />
-// 						<NavbarButton href="/info" text="Info" />
-// 						<NavbarButton href="/contact" text="Contact" /> */}
-// 						{
-// 							pages.map(i => (
-
-// 								<NavbarButton href={"/" + i.toLowerCase()} text={i.charAt(0).toUpperCase() + i.slice(1)} />
-// 							))
-// 						}
-// 					</nav>
-// 				</div>
-// 			</header>
-// 		</>
-// 	);
-// }
-
 export default function Navbar({ pages })
 {
 	const [menu, setMenu] = useState(false);
@@ -51,15 +25,17 @@ export default function Navbar({ pages })
 					<div className="ml-auto flex">
 						{
 							pages.map(i => (
-
-								<NavbarButton href={"/" + i.toLowerCase()} text={i.charAt(0).toUpperCase() + i.slice(1)} />
+								<>
+									<div className="ml-5" />
+									<NavbarButton href={"/" + i.toLowerCase()} text={i.charAt(0).toUpperCase() + i.slice(1)} />
+								</>
 							))
 						}
 					</div>
 				</div>
 				<div className="p-3 md:hidden flex flex-col">
 					<button onClick={switchMenu} className="focus:outline-none">
-						<div className="mr-5 hover:bg-main-700 px-3 py-2 rounded-md">
+						<div className="hover:bg-main-700 px-3 py-2 rounded-md">
 							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 								width="24" height="24"
 								viewBox="0 0 24 24"
@@ -73,7 +49,6 @@ export default function Navbar({ pages })
 						<div onClick={switchMenu} className="pt-1 md:hidden flex flex-col">
 							{
 								pages.map(i => (
-
 									<NavbarButton href={"/" + i.toLowerCase()} text={i.charAt(0).toUpperCase() + i.slice(1)} />
 								))
 							}

@@ -10,10 +10,10 @@ export default function Button({ href })
 
     return (
         <>
-            <div className="text-end ml-3">
-                <form className="flex flex-col w-full justify-center">
+            <div className="text-end">
+                <form className="flex flex-col justify-center">
                     <div className="relative">
-                        <input type="submit" onSubmit={Submit} value="Button" id="button" className="rounded-lg flex-1 appearance-none border border-main-500 w-full py-2 px-4 bg-main-300 text-gray-100 placeholder-grey-500 text-base focus:outline-none" />
+                        <input type="submit" onSubmit={Submit} value="Button" id="button" className="rounded-lg flex-1 appearance-none border border-main-800 py-2 px-4 bg-main-500 text-main-100 text-base focus:outline-none" />
                     </div>
                 </form>
             </div>
